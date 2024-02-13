@@ -1,0 +1,132 @@
+
+
+
+.containerLanding{
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.containerText{
+
+    justify-items: center;
+    align-items: center;
+   position: absolute;
+   top: 10em;
+
+}
+
+
+.pStyle {
+
+    text-align: center;
+    text-shadow: 2px 2px 2px white;
+    color: purple;
+    font-style: italic;
+
+}
+
+.titleStyle{
+
+    text-align: center;
+    color: purple;
+    text-shadow: 2px 2px 2px black;    
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+.buttonStyle {
+    font-size: 45px !important;
+    width: 50px;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+    border: 1px  solid transparent;
+    box-shadow: 2px 2px 1px 2px black;
+    z-index: 60;
+
+}
+
+.buttonStyle:hover {
+
+    outline:  none;
+    box-shadow: 2px 2px 1px 2px rgb(239, 12, 239);
+}
+
+.iconStyle {
+
+    width: 45px !important;
+    margin-left: 3px;
+        z-index: 60;
+}
+
+
+.buttonText {
+
+    margin-top: 11px;
+    font-weight: 900;
+    color: rgb(239, 12, 239);
+    text-shadow: 2px 2px 2px white;
+ visibility: hidden;
+ position: absolute;
+    opacity: 0;
+    left: 50%;
+    border: 2px solid transparent !important;
+    outline: 2px solid transparent;
+    z-index: -60;
+
+}
+
+
+
+
+@media only screen and (max-width: 554px) {
+     
+    .titleStyle{
+
+
+        font-size: 23px;
+        font-weight: 900;
+    }
+
+    .containerText{
+
+        justify-items: center;
+        align-items: center;
+       position: absolute;
+       top: 8em;
+    
+    }
+
+
+    
+      }
+
+
+      @media only screen and (max-width: 400px) {
+     
+        .containerText{
+
+            justify-items: center;
+            align-items: center;
+           position: absolute;
+           top: 13em;
+        
+        }
+
+   
+     
+        .titleStyle{
+
+
+            font-size: 23px;
+            font-weight: 900;
+        }
+             
+ 
+    
+    
+        
+          }
