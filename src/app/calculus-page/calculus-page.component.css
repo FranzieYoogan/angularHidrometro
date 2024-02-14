@@ -37,6 +37,43 @@ label {
 
 }
 
+.stylingBorder {
+
+    border: 2px solid rgb(198, 44, 198);
+    box-shadow: 2px 2px 2px 2px black;
+
+}
+
+p {
+
+    color: rgb(198, 44, 198);
+    text-shadow: 1px 1px 1px black;
+    font-weight: 900;
+
+}
+
+.androidName {
+
+    color: rgb(198, 44, 198);
+    font-weight: 900 !important;
+    text-shadow: 2px 2px 2px black;
+  
+
+}
+
+.timeStyle {
+
+    color: rgb(184, 124, 184);
+    font-weight: 900;
+
+}
+
+.deliver {
+
+    color: green;
+    font-weight: 900;
+}
+
 .chatBotContainerAll {
 
     position: relative;
