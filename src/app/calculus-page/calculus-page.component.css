@@ -49,8 +49,8 @@ label {
 .chatBotContainer {
 
     position: absolute;
-    width: 0%;
-    bottom: 5em;
+    width: 100%;
+    bottom: 0em;
 
 }
 
@@ -91,6 +91,32 @@ label {
 }
 
 .chatBotContainerYes {
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    visibility: hidden;
+
+}
+
+
+
+
+
+
+/* FAILED */
+
+.chatBotContainerAllYesNoFailed {
+
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    width: 100%;
+    visibility: hidden;
+  
+}
+
+.chatBotContainerYesNoFailed {
 
     position: absolute;
     width: 100%;

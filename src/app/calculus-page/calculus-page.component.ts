@@ -25,7 +25,7 @@ export class CalculusPageComponent implements OnInit {
         const chatBotContainer:any = document.getElementById('chatBotContainer')
   
   
-        switch (inputValue.value) {
+        switch (inputValue.value.replace(/\s+/g, '').replace('a','ã').replace('A','ã').toLowerCase()) {
   
   
           case 'sim': 
@@ -51,6 +51,14 @@ export class CalculusPageComponent implements OnInit {
             break;
 
           default:
+
+          chatBotContainer.style.bottom = '15em'
+          chatBotContainer.style.opacity = '0'
+          chatBotContainer.style.transition = '1s'
+          inputValue.value = ''
+            this.chatBotAnswerYesNoFailed()
+          
+          
             break;
         }
         
@@ -67,10 +75,11 @@ export class CalculusPageComponent implements OnInit {
   chatBotEvent() {
 
     const currentDate = new Date()
+    const timeValue: any = document.getElementById('timeValue')
 
     const chatBotContainerAll: any = document.getElementById('chatBotContainerAll')
     const chatBotContainer:any = document.getElementById('chatBotContainer')
-    const timeValue: any = document.getElementById('timeValue')
+
     const chatBotValue: any = document.getElementById('chatBotValue')
 
 
@@ -80,7 +89,7 @@ chatBotValue.innerHTML = 'Olá, por acaso você teria o valor em m3   ? '
     chatBotContainerAll.style.opacity = '1'
     chatBotContainerAll.style.transition = '1s'
     chatBotContainer.style.width = '100%'
-    chatBotContainer.style.transition = '0.2s'
+    chatBotContainer.style.transition = '0.5s'
     chatBotContainer.style.bottom = '5em'
   }
 
@@ -88,16 +97,16 @@ chatBotValue.innerHTML = 'Olá, por acaso você teria o valor em m3   ? '
 
   chatBotAnswerNo() {
 
-    const currentDate = new Date()
+    const currentDate2 = new Date()
 
 
     const chatBotContainerNo:any = document.getElementById('chatBotContainerNo')
-    const timeValue: any = document.getElementById('timeValue')
+    const timeValue2: any = document.getElementById('timeValueNo')
     const chatBotValueNo: any = document.getElementById('chatBotValueNo')
 
 
 chatBotValueNo.innerHTML = 'Digite o valor anterior do hidrometro'
-    timeValue.innerHTML = currentDate.toLocaleString()
+    timeValue2.innerHTML = currentDate2.toLocaleString()
 
     chatBotContainerNo.style.visibility = 'visible'
     chatBotContainerNo.style.opacity = '1'
@@ -110,12 +119,12 @@ chatBotValueNo.innerHTML = 'Digite o valor anterior do hidrometro'
 
   chatBotAnswerYes() {
 
-    const currentDate = new Date()
+    const currentDate3 = new Date()
 
    
     const chatBotContainerYes:any = document.getElementById('chatBotContainerYes')
     const chatBotContainer:any = document.getElementById('chatBotContainer')
-    const timeValue: any = document.getElementById('timeValue')
+    const timeValue3: any = document.getElementById('timeValueYes')
     const chatBotValueYes: any = document.getElementById('chatBotValueYes')
 
     const dot1 = '.'
@@ -126,7 +135,7 @@ chatBotValueNo.innerHTML = 'Digite o valor anterior do hidrometro'
 
 
 
-    timeValue.innerHTML = currentDate.toLocaleString()
+    timeValue3.innerHTML = currentDate3.toLocaleString()
 
     chatBotContainerYes.style.visibility = 'visible'
     chatBotContainerYes.style.opacity = '1'
@@ -156,6 +165,82 @@ setTimeout(() => {
 
 }, 4500);
 
+
+
+
+  }
+
+
+
+
+  chatBotAnswerYesNoFailed() {
+
+    const currentDate4 = new Date()
+
+
+    const chatBotContainerYesNoFailed :any = document.getElementById('chatBotContainerYesNoFailed ')
+    const timeValue4: any = document.getElementById('timeValueYesNoFailed')
+    const chatBotValueYesNoFailed: any = document.getElementById('chatBotValueYesNoFailed')
+    const chatBotContainer:any = document.getElementById('chatBotContainer')
+    const dot2 = '.'
+
+chatBotValueYesNoFailed.innerHTML = 'Desculpe, devido ao meu script limitado não pude compreender suas palavras. Vamos tentar de novo'
+    timeValue4.innerHTML = currentDate4.toLocaleString()
+
+    chatBotContainerYesNoFailed .style.visibility = 'visible'
+    chatBotContainerYesNoFailed .style.opacity = '1'
+    chatBotContainerYesNoFailed .style.transition = '1s'
+    chatBotContainerYesNoFailed .style.width = '100%'
+    chatBotContainerYesNoFailed .style.bottom = '5em'
+
+
+    
+
+
+    setTimeout(() => {
+      chatBotValueYesNoFailed.innerHTML = `Desculpe, devido ao meu script limitado não pude compreender suas palavras. Vamos tentar de novo ${dot2}`
+ 
+
+    }, 1000);
+
+    setTimeout(() => {
+      chatBotValueYesNoFailed.innerHTML = `Desculpe, devido ao meu script limitado não pude compreender suas palavras. Vamos tentar de novo ${dot2} ${dot2}`
+   
+
+    }, 2000);
+
+    setTimeout(() => {
+      chatBotValueYesNoFailed.innerHTML = `Desculpe, devido ao meu script limitado não pude compreender suas palavras. Vamos tentar de novo ${dot2} ${dot2} ${dot2}`
+
+
+    }, 3000);
+
+
+    setTimeout(() => {
+      const chatBotContainer:any = document.getElementById('chatBotContainer')
+
+      chatBotContainerYesNoFailed .style.visibility = 'hidden'
+      chatBotContainerYesNoFailed .style.opacity = '0'
+      chatBotContainerYesNoFailed .style.transition = '1s'
+      chatBotContainerYesNoFailed .style.width = '100%'
+      chatBotContainerYesNoFailed .style.bottom = '15em'
+      chatBotContainer.style.bottom = '0em'
+
+
+
+    }, 4000);
+
+    setTimeout(() => {
+     
+      const chatBotContainer:any = document.getElementById('chatBotContainer')
+
+
+      chatBotContainer.style.width = '100%'
+      chatBotContainer.style.opacity = '1'
+      chatBotContainer.style.transition = '0.5s'
+      chatBotContainer.style.bottom = '5em'
+
+    }, 4500);
 
 
 
