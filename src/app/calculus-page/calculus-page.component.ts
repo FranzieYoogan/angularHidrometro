@@ -81,38 +81,47 @@ export class CalculusPageComponent implements OnInit {
     if(getMonth1.value && getMonth2.value) {
 
       setTimeout(() => {
-        buttonText.style.transition ='1s'
-        buttonText.style.left ='58%'
-        buttonText.style.visibility ='visible'
+     
       
 
-        button.style.rotate ='181deg'
+        button.style.rotate ='183deg'
         button.style.outline ='2px solid rgb(255, 174, 236)'
   button.style.transition ='0.5s'
   getMonth1.style.border = '2px solid green'
   getMonth2.style.border = '2px solid green'
 
-      }, 600);
+      }, 800);
+
+      setTimeout(() => {
+        buttonText.style.transition ='1s'
+        buttonText.style.left ='58%'
+        buttonText.style.visibility ='visible'
+        localStorage.setItem('previousOne',getMonth1.value)
+        localStorage.setItem('currentOne',getMonth2.value)
+
+      
+
+
+      }, 1500);
 
       setTimeout(() => {
   
+
+        
         window.location.href = '/panel'
 
 
-      }, 1300);
+      }, 2500);
 
 
-      localStorage.setItem('previousOne',getMonth1.value)
-      localStorage.setItem('currentOne',getMonth2.value)
+  
 
     }
 
     if(getMonth1.value) {
 
       setTimeout(() => {
-        buttonText.style.transition ='1s'
-        buttonText.style.left ='58%'
-        buttonText.style.visibility ='visible'
+
       
 
         button.style.rotate ='181deg'
@@ -136,13 +145,10 @@ export class CalculusPageComponent implements OnInit {
     }
 
 
-    if(getMonth1.value) {
+    if(getMonth2.value) {
 
       setTimeout(() => {
-        buttonText.style.transition ='1s'
-        buttonText.style.left ='58%'
-        buttonText.style.visibility ='visible'
-      
+
 
         button.style.rotate ='181deg'
         button.style.outline ='2px solid rgb(255, 174, 236)'
@@ -303,6 +309,9 @@ chatBotValueNo.innerHTML = 'Digite o valor anterior do hidrometro'
     const chatBotContainer:any = document.getElementById('chatBotContainer')
     const timeValue3: any = document.getElementById('timeValueYes')
     const chatBotValueYes: any = document.getElementById('chatBotValueYes')
+    const inputValue: any = document.getElementById('inputValue')
+
+    inputValue.value = ''
 
     const dot1 = '.'
     
