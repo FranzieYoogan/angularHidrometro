@@ -65,6 +65,39 @@ export class CalculusPageComponent implements OnInit {
 
       }
   });
+  const inputValue2: any = document.getElementById('inputValue2')
+  const chatBotContainerNo: any = document.getElementById('chatBotContainerNo')
+  const containerItem2: any = document.getElementById('containerItem2')
+
+  inputValue2.addEventListener('keypress',  (ee: { key: string; }) => {
+    if (ee.key === 'Enter') {
+  
+
+      if (!inputValue2.value || inputValue2.value <=0) {
+
+        containerItem2.style.border = '2px solid red'
+
+       
+      } else {
+
+        localStorage.setItem('previousValue',inputValue2.value)
+     
+        containerItem2.style.border = 'none'
+        containerItem2.style.borderTop = '1px solid black'
+
+        chatBotContainerNo.style.visibility = 'hidden'
+        chatBotContainerNo.style.opacity = '0'
+        chatBotContainerNo.style.transition = '1s'
+        chatBotContainerNo.style.width = '100%'
+        chatBotContainerNo.style.bottom = '15em'
+            this.chatBotAnswerNo2
+       
+
+      }
+      
+
+    }
+});
 
 
 
@@ -103,9 +136,71 @@ chatBotValue.innerHTML = 'Olá, por acaso você teria o valor em m3   ? '
     const chatBotContainerNo:any = document.getElementById('chatBotContainerNo')
     const timeValue2: any = document.getElementById('timeValueNo')
     const chatBotValueNo: any = document.getElementById('chatBotValueNo')
+    const containerItem1:any = document.getElementById('containerItem1')
+    const containerItem2:any = document.getElementById('containerItem2')
+    const inputValue2:any = document.getElementById('inputValue2')
+    const inputValue: any = document.getElementById('inputValue')
+    const chatBotContainer:any = document.getElementById('chatBotContainer')
 
+
+    containerItem1.style.visibility ='hidden'
+    containerItem1.style.display ='none'
+    containerItem2.style.visibility ='visible'
+
+
+    chatBotContainerNo.style.visibility = 'visible'
+    chatBotContainerNo.style.opacity = '1'
+    chatBotContainerNo.style.transition = '1s'
+    chatBotContainerNo.style.width = '100%'
+    chatBotContainerNo.style.bottom = '5em'
 
 chatBotValueNo.innerHTML = 'Digite o valor anterior do hidrometro'
+    timeValue2.innerHTML = currentDate2.toLocaleString()
+
+
+  }
+
+
+  chatBotAnswerNo2() {
+
+    const currentDate2 = new Date()
+
+
+    const chatBotContainerNo:any = document.getElementById('chatBotContainerNo')
+    const timeValue2: any = document.getElementById('timeValueNo')
+    const chatBotValueNo: any = document.getElementById('chatBotValueNo')
+    const containerItem1:any = document.getElementById('containerItem1')
+    const containerItem2:any = document.getElementById('containerItem2')
+    const inputValue2:any = document.getElementById('inputValue2')
+    const inputValue: any = document.getElementById('inputValue')
+    const chatBotContainer:any = document.getElementById('chatBotContainer')
+
+
+    containerItem1.style.visibility ='hidden'
+    containerItem1.style.display ='none'
+    containerItem2.style.visibility ='visible'
+
+    inputValue2.addEventListener('keypress',  (e: { key: string; }) => {
+      if (e.key === 'Enter') {
+    
+
+        if (parseInt(inputValue.value.replace(/\s+/g, ''))) {
+  
+              localStorage.setItem('previousValue',inputValue2.value)
+
+         
+        } else {
+
+
+         
+
+        }
+        
+
+      }
+  });
+
+chatBotValueNo.innerHTML = 'Digite o valor deste mês do hidrometro'
     timeValue2.innerHTML = currentDate2.toLocaleString()
 
     chatBotContainerNo.style.visibility = 'visible'

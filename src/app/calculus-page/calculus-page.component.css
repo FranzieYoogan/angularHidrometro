@@ -21,7 +21,27 @@ bottom: 0;
 
 }
 
+.containerItem2 {
+
+    position: absolute;
+    justify-items: center;
+bottom: 0;
+    visibility: hidden;
+    width: 100%;
+}
+
+
 .inputStyle {
+
+    border-top: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    color:  black;
+    font-weight: 900;
+    color: #e6a0ba
+}
+
+.inputStyle2 {
 
     border-top: 1px solid black;
     background-color: white;
@@ -49,7 +69,7 @@ p {
     color: rgb(198, 44, 198);
     text-shadow: 1px 1px 1px black;
     font-weight: 900;
-
+    font-size: 13px;
 }
 
 .androidName {
