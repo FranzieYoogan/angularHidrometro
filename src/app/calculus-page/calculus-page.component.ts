@@ -71,6 +71,145 @@ export class CalculusPageComponent implements OnInit {
   }
 
 
+  buttonEvent() {
+
+    const button:any = document.getElementById('button')
+    const buttonText:any = document.getElementById('buttonText')
+    const getMonth1:any = document.getElementById('getMonth1')
+    const getMonth2:any = document.getElementById('getMonth2')
+
+    if(getMonth1.value && getMonth2.value) {
+
+      setTimeout(() => {
+        buttonText.style.transition ='1s'
+        buttonText.style.left ='58%'
+        buttonText.style.visibility ='visible'
+      
+
+        button.style.rotate ='181deg'
+        button.style.outline ='2px solid rgb(255, 174, 236)'
+  button.style.transition ='0.5s'
+  getMonth1.style.border = '2px solid green'
+  getMonth2.style.border = '2px solid green'
+
+      }, 600);
+
+      setTimeout(() => {
+  
+        window.location.href = '/panel'
+
+
+      }, 1300);
+
+
+      localStorage.setItem('previousOne',getMonth1.value)
+      localStorage.setItem('currentOne',getMonth2.value)
+
+    }
+
+    if(getMonth1.value) {
+
+      setTimeout(() => {
+        buttonText.style.transition ='1s'
+        buttonText.style.left ='58%'
+        buttonText.style.visibility ='visible'
+      
+
+        button.style.rotate ='181deg'
+        button.style.outline ='2px solid rgb(255, 174, 236)'
+  button.style.transition ='0.5s'
+
+      }, 600);
+
+      setTimeout(() => {
+  
+        button.style.rotate ='0deg'
+        button.style.outline ='2px solid rgb(255, 174, 236)'
+    button.style.transition ='0.5s'
+
+
+      }, 600);
+
+      getMonth1.style.border = '2px solid green'
+
+
+    }
+
+
+    if(getMonth1.value) {
+
+      setTimeout(() => {
+        buttonText.style.transition ='1s'
+        buttonText.style.left ='58%'
+        buttonText.style.visibility ='visible'
+      
+
+        button.style.rotate ='181deg'
+        button.style.outline ='2px solid rgb(255, 174, 236)'
+  button.style.transition ='0.5s'
+
+      }, 600);
+
+      setTimeout(() => {
+  
+        button.style.rotate ='0deg'
+        button.style.outline ='2px solid rgb(255, 174, 236)'
+    button.style.transition ='0.5s'
+
+
+      }, 600);
+
+      getMonth2.style.border = '2px solid green'
+
+
+    }
+
+
+
+
+    if(!getMonth1.value) {
+      button.style.rotate ='181deg'
+        button.style.outline ='2px solid rgb(255, 174, 236)'
+  button.style.transition ='0.5s'
+
+  setTimeout(() => {
+    button.style.rotate ='0deg'
+    button.style.outline ='2px solid rgb(255, 174, 236)'
+button.style.transition ='0.5s'
+  }, 600);
+
+  getMonth1.style.border = '2px solid red'
+      
+    }
+
+
+
+    if(!getMonth2.value) {
+      button.style.rotate ='181deg'
+        button.style.outline ='2px solid rgb(255, 174, 236)'
+  button.style.transition ='0.5s'
+
+  setTimeout(() => {
+    button.style.rotate ='0deg'
+    button.style.outline ='2px solid rgb(255, 174, 236)'
+button.style.transition ='0.5s'
+  }, 600);
+
+  getMonth2.style.border = '2px solid red'
+
+    
+          
+        }
+    
+
+
+
+   
+     
+
+  }
+
+
   chatBotEvent() {
 
     const currentDate = new Date()
@@ -98,7 +237,7 @@ chatBotValue.innerHTML = 'Olá, por acaso você teria o valor em m3   ? '
 
     const currentDate2 = new Date()
 
-
+    const button: any = document.getElementById('button')
     const chatBotContainerNo:any = document.getElementById('chatBotContainerNo')
     const timeValue2: any = document.getElementById('timeValueNo')
     const chatBotValueNo: any = document.getElementById('chatBotValueNo')
@@ -107,6 +246,16 @@ chatBotValue.innerHTML = 'Olá, por acaso você teria o valor em m3   ? '
 
     const getMonth1:any = document.getElementById('getMonth1')
     const getMonth2:any = document.getElementById('getMonth2')
+
+
+
+    setTimeout(() => {
+      button.style.visibility = 'visible'
+      button.style.opacity = '1'
+      button.style.transition = '3s'
+      
+    }, 1000);
+
 
     getMonth1.style.visibility = 'visible'
     getMonth1.style.opacity = '1'

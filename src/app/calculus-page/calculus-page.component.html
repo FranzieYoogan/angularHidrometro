@@ -8,9 +8,25 @@
 
 <section class="containerCalculus">
 
-    <input placeholder="anterior" id="getMonth1" class="inputNew1" type="" />
+    <div style="position: relative">
+        
+    
+<!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
+<button
+id="button"
+    (click)="buttonEvent()"
+  type="button"
 
-      <input placeholder="atual" id="getMonth2" class="inputNew2" type="" />
+  class="buttonStyle rounded-full bg-primary p-2 uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+  <img id="icon" class="iconStyle" src="/assets/img/icons/start.png" alt="">
+    
+</button>
+</div>
+<h1 id="buttonText" class="buttonText">GO</h1>
+
+    <input placeholder="anterior" id="getMonth1" class="inputNew1" type="number" />
+
+      <input placeholder="atual" id="getMonth2" class="inputNew2" type="number" />
 
     <div id="chatBotContainerAll" class="chatBotContainerAll">
 
@@ -38,7 +54,9 @@
 
 
 
-
+             
+                    
+               
                 <div id="chatBotContainerNo" class="chatBotContainerNo flex items-start gap-2.5">
    <img class="w-8 h-8 rounded-full" src="/assets/img/icons/android.png" alt="Jese image">
    <div class="stylingBorder flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
@@ -52,11 +70,10 @@
 
         
 
-  
-</div>
 
 
 
+ </div>
 
 
 

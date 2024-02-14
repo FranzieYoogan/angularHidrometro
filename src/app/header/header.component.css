@@ -11,7 +11,7 @@
     border-bottom: 2px solid black !important;
     background-color: transparent;
     position: absolute;
- top: -102vh;
+ top: -100vh;
 }
 
 
@@ -30,6 +30,23 @@
     }
 
       }
+
+
+      @media only screen and (max-width: 375px) {
+     
+        .navStyle {
+      
+      
+            top: -98vh;
+        }
+    
+        .logoStyle {
+        
+            width: 40px;
+            top:  -6px;
+        }
+    
+          }
 
 
 /* @media only screen and (max-width: 554px) {

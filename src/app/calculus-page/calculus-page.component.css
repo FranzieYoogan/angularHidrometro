@@ -10,6 +10,77 @@
     overflow: hidden;
 }
 
+.buttonText {
+
+    font-weight: 900;
+    color: rgb(255, 89, 189);
+    text-shadow: 2px 2px 2px black;
+    border: 2px solid transparent !important;
+    outline: 2px solid transparent;
+ visibility: hidden;
+ position: fixed;
+    top: 55%;
+    left: 68%;
+    z-index: 65;
+
+
+}
+
+.buttonStyle {
+
+    position: absolute;
+   bottom: 38%; 
+   left: 19.5em;  
+    width: 40px !important;
+    z-index: 60;
+    box-shadow: 2px 2px 2px 2px  rgb(233, 180, 221);
+    background-color: black;
+    outline: 1px solid rgb(255, 174, 236);
+    transition: 3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 554px) {
+     
+     .buttonStyle {
+
+   
+        left: 24em;  
+        bottom: 54%; 
+   
+    } 
+
+    .buttonText {
+
+      top: 37%;
+
+    }
+
+      }
+
+
+      @media only screen and (max-width: 400px) {
+     
+         .buttonStyle {
+
+
+            left: 19em;  
+            bottom: 39%; 
+       
+        } 
+
+        .buttonText {
+
+            top: 55%;
+      
+          }
+    
+          }
+
+
+
 .containerItem1 {
 
     position: absolute;
