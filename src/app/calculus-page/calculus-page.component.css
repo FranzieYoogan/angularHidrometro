@@ -17,11 +17,21 @@
 bottom: 0;
 
     width: 100%;
+       
 
 
 }
 
 .containerItem2 {
+
+    position: absolute;
+    justify-items: center;
+bottom: 0;
+    visibility: hidden;
+    width: 30%%;
+}
+
+.containerItem3 {
 
     position: absolute;
     justify-items: center;
@@ -50,6 +60,17 @@ bottom: 0;
     font-weight: 900;
     color: #e6a0ba
 }
+
+.inputStyle3 {
+
+    border-top: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    color:  black;
+    font-weight: 900;
+    color: #e6a0ba
+}
+
 
 label {
 
@@ -134,6 +155,21 @@ p {
 }
 
 
+/* NO2 */
+
+
+
+.chatBotContainerNo2 {
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    visibility: hidden;
+
+}
+
+
+
 
 /* YES */
 
@@ -181,3 +217,118 @@ p {
     visibility: hidden;
 
 }
+
+/* hope it works */
+
+
+ .inputNew1 {
+
+    position: absolute;
+    top: 90%;
+    right: 60%;
+    width: 30%;
+    border-radius: 40px;
+    border: 2px solid white;
+    z-index: 60;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 25px;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 2px purple;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+ }
+
+ .inputNew2 {
+
+    position: absolute;
+    top: 90%;
+    right: 10%;
+    width: 30%;
+    border-radius: 40px;
+    border: 2px solid white;
+    z-index: 60;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 25px;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px 2px purple;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+   text-align: center;
+ }
+
+ .inputNew1:active, .inputNew1:focus {
+
+    border: 2px solid transparent;
+    outline: 2px solid transparent;
+
+
+ }
+
+ .inputNew2:active, .inputNew2:focus {
+
+    border: 2px solid transparent;
+    outline: 2px solid transparent;
+
+
+ }
+
+
+
+ @media only screen and (max-width: 554px) {
+     
+    .inputNew1 {
+
+        top: 80%;
+
+    }
+
+    .chatBotContainerNo {
+
+        left: 13%;
+
+    }
+
+
+    .inputNew2 {
+
+        top: 80%;
+
+    }
+
+      }
+
+      @media only screen and (max-width: 400px) {
+     
+        .inputNew1 {
+    
+            top: 80%;
+    
+        }
+
+        .chatBotContainerNo {
+
+            left: 0%;
+    
+        }
+
+        
+
+        .inputNew2 {
+
+            top: 80%;
+    
+        }
+
+          }
+
+
+ ::placeholder {
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font-weight: 900;
+
+
+ }
