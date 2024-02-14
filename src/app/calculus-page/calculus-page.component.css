@@ -26,5 +26,13 @@ bottom: 0;
     border-top: 1px solid black;
     background-color: white;
     border-radius: 20px;
-    
+    color:  black;
+    font-weight: 900;
+    color: #e6a0ba
+}
+
+label {
+
+    color: #e6a0ba;
+
 }
