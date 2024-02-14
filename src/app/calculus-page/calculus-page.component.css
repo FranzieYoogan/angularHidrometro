@@ -75,3 +75,26 @@ label {
     visibility: hidden;
 
 }
+
+
+
+/* YES */
+
+.chatBotContainerAllYes {
+
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    width: 100%;
+    visibility: hidden;
+  
+}
+
+.chatBotContainerYes {
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    visibility: hidden;
+
+}

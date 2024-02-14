@@ -5,14 +5,14 @@ import { HeaderComponent } from '../header/header.component';
 @Component({
   selector: 'app-calculus-page',
   standalone: true,
-  imports: [CalculusPageComponent,HeaderComponent],
+  imports: [HeaderComponent],
   templateUrl: './calculus-page.component.html',
   styleUrl: './calculus-page.component.css'
 })
 export class CalculusPageComponent implements OnInit {
 
 
-  ngOnInit() {
+  ngOnInit(): void {
 
 
     const inputValue: any = document.getElementById('inputValue')
@@ -29,10 +29,10 @@ export class CalculusPageComponent implements OnInit {
   
   
           case 'sim': 
-          chatBotContainer.style.bottom = '15em'
-          chatBotContainer.style.opacity = '0'
-          chatBotContainer.style.transition = '1s'
-          inputValue.value = ''
+
+     
+
+          this.chatBotAnswerYes()
             
             break;
 
@@ -90,7 +90,7 @@ chatBotValue.innerHTML = 'Olá, por acaso você teria o valor em m3   ? '
 
     const currentDate = new Date()
 
-    const chatBotContainerAllNo: any = document.getElementById('chatBotContainerAll')
+
     const chatBotContainerNo:any = document.getElementById('chatBotContainerNo')
     const timeValue: any = document.getElementById('timeValue')
     const chatBotValueNo: any = document.getElementById('chatBotValueNo')
@@ -104,6 +104,61 @@ chatBotValueNo.innerHTML = 'Digite o valor anterior do hidrometro'
     chatBotContainerNo.style.transition = '1s'
     chatBotContainerNo.style.width = '100%'
     chatBotContainerNo.style.bottom = '5em'
+  }
+
+
+
+  chatBotAnswerYes() {
+
+    const currentDate = new Date()
+
+   
+    const chatBotContainerYes:any = document.getElementById('chatBotContainerYes')
+    const chatBotContainer:any = document.getElementById('chatBotContainer')
+    const timeValue: any = document.getElementById('timeValue')
+    const chatBotValueYes: any = document.getElementById('chatBotValueYes')
+
+    const dot1 = '.'
+    
+    chatBotContainer.style.opacity = '0'
+    chatBotContainer.style.transition = '1s'
+    chatBotContainer.style.bottom = '15em'
+
+
+
+    timeValue.innerHTML = currentDate.toLocaleString()
+
+    chatBotContainerYes.style.visibility = 'visible'
+    chatBotContainerYes.style.opacity = '1'
+    chatBotContainerYes.style.transition = '1s'
+    chatBotContainerYes.style.width = '100%'
+    chatBotContainerYes.style.bottom = '5em'
+
+chatBotValueYes.innerHTML = `Ok, estarei te redirecionando ao painel`
+
+setTimeout(() => {
+  chatBotValueYes.innerHTML = `Ok, estarei te redirecionando ao painel ${dot1}`
+}, 2000);
+
+
+setTimeout(() => {
+  chatBotValueYes.innerHTML = `Ok, estarei te redirecionando ao painel ${dot1} ${dot1}`
+}, 3000);
+
+
+setTimeout(() => {
+  chatBotValueYes.innerHTML = `Ok, estarei te redirecionando ao painel ${dot1}  ${dot1}  ${dot1}`
+}, 4000);
+
+setTimeout(() => {
+
+  window.location.href = '/panel'
+
+}, 4500);
+
+
+
+
   }
 
   
