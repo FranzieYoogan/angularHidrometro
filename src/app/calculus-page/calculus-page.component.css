@@ -36,3 +36,42 @@ label {
     color: #e6a0ba;
 
 }
+
+.chatBotContainerAll {
+
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    width: 100%;
+
+}
+
+.chatBotContainer {
+
+    position: absolute;
+    width: 0%;
+    bottom: 5em;
+
+}
+
+
+/* NO */
+
+.chatBotContainerAllNo {
+
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    width: 100%;
+    visibility: hidden;
+  
+}
+
+.chatBotContainerNo {
+
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    visibility: hidden;
+
+}
