@@ -1,0 +1,191 @@
+.containerPanel {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 3em !important;
+}
+
+.containerPanel2 {
+
+   display: flex;
+  
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: purple;
+    box-shadow: 2px 2px 4px 4px black;
+}
+
+.containerTitle{
+
+    border-bottom: 2px solid white;
+    margin-bottom: 2em;
+    
+}
+
+
+.inputStyle {
+
+    border: 2px solid purple;
+    background-color: white;
+    border-radius: 20px;
+    color:  black;
+    font-weight: 900;
+    color: #e6a0ba;
+    width: 225px;
+    box-shadow: 1px 1px 1px 1px black;
+
+
+} 
+
+.inputStyle2 {
+
+    border: 2px solid purple;
+    background-color: white;
+    border-radius: 20px;
+    color:  black;
+    font-weight: 900;
+    color: #e6a0ba;
+    width: 225px;
+    box-shadow: 1px 1px 1px 1px black;
+
+} 
+
+.inputStyle3 {
+
+    border: 2px solid purple;
+    background-color: white;
+    border-radius: 20px;
+    color:  black;
+    font-weight: 900;
+    color: #e6a0ba;
+    width: 225px;
+    box-shadow: 1px 1px 1px 1px black;
+
+} 
+
+
+    /* HEADER */
+
+.label1 {
+
+    color: #e6a0ba;
+    font-weight: 900;
+  margin-left: 2em;
+}
+
+.label2 {
+
+    color: #e6a0ba;
+    font-weight: 900;
+  margin-left: 2em;
+}
+
+.labelAliquota {
+
+    color: #e6a0ba;
+    font-weight: 900;
+
+}
+
+.textTitle {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    
+
+}
+
+.textStyle {
+    font-size: 13px;
+    color: #e6a0ba;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+
+
+}
+
+.textStyle2 {
+    font-size: 13px;
+    color: #e6a0ba;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 1em;
+
+}
+
+
+.logoStyle {
+
+    border-radius: 90px;
+    width: 45px;
+
+
+}
+
+.navStyle {
+
+    border-bottom: 2px solid black !important;
+    background-color: transparent;
+
+}
+
+.butonStyle {
+
+    width: 100%;
+    border: 1px solid white;
+
+background-color: black;
+    border-radius: 40px;
+    transition: 0.3s !important;
+    margin-top: 1em;
+
+}
+
+
+
+.butonStyle:hover {
+    transition: 0.3s !important;
+    background-color: transparent;
+    box-shadow: 2px 2px 4px 4px black;
+    font-weight: 900;
+
+}
+
+
+
+
+
+/* @media only screen and (max-width: 554px) {
+     
+    .navStyle {
+        
+        bottom: 86vh !important;
+    }
+
+    .logoStyle {
+
+   
+        top: 0px;
+    }
+
+      }
+
+       @media only screen and (max-width: 400px) {
+     
+        .navStyle {
+      
+      
+            bottom: 90vh !important
+        }
+
+        .logoStyle {
+
+   
+            top: 0px;
+        }
+
+          }  */
+
