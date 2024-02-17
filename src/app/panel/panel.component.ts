@@ -54,8 +54,8 @@ export class PanelComponent implements OnInit {
    
 
 
-     if(localStorage.getItem("previousOne") && localStorage.getItem("currentONe")) {
-      let untilNow:any = 0
+     if(localStorage.getItem("previousOne") && localStorage.getItem("currentOne")) {
+      let untilNow:any = previousOne - currentOne
 
     return  untilNow
 
