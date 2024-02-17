@@ -1,17 +1,36 @@
-.containerPanel {
+.containerAll {
+
+    background: url('/assets/background/reservoir.png');
+    background: url('/assets/img/background/reservoir.png');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 530%;
+    background-position-x: 0%;
+    height: 87.6vh;
+    width: 100%;
 
     display: flex;
     justify-content: center;
-    margin-top: 10vh;
-    margin-bottom: 3em !important;
+}
+
+.containerPanel {
+
+
+    
+
+    z-index: 60;
+
+
 }
 
 .containerPanel2 {
-
+    overflow: hidden;
+    margin-top: 20vh;
    display: flex;
-  
+    width: auto;
+
     border: 2px solid white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 40px;
     background-color: purple;
     box-shadow: 2px 2px 4px 4px black;
@@ -125,16 +144,16 @@
 
 }
 
-.navStyle {
+.navStyle { 
 
     border-bottom: 2px solid black !important;
     background-color: transparent;
-
+    width: 100%;
 }
 
 .butonStyle {
 
-    width: 100%;
+    width: 90%;
     border: 1px solid white;
 
 background-color: black;
@@ -154,7 +173,52 @@ background-color: black;
 
 }
 
+@media only screen and (max-width: 400px) {
+     
+    .containerPanel2  {
+  
+        margin-left: 3em;
 
+    }
+
+    .containerAll {
+
+        width: 130%;
+        height: 90vh;
+  
+    }
+
+    .navStyle { 
+        width: 100% !important;
+        border-bottom: 2px solid black !important;
+        background-color: transparent;
+    
+    }
+
+}
+
+@media only screen and (max-width: 554px) {
+     
+    .containerPanel2  {
+  
+  
+
+    }
+
+    .containerAll {
+
+        width: 130%;
+        height: 119vh;
+    }
+
+    .navStyle { 
+        width: 130% !important;
+        border-bottom: 2px solid black !important;
+        background-color: transparent;
+    
+    }
+
+}
 
 
 
