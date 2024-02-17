@@ -1,10 +1,9 @@
 .containerAll {
 
-    background: url('/assets/background/reservoir.png');
     background: url('/assets/img/background/reservoir.png');
     overflow: hidden;
     background-repeat: no-repeat;
-    background-size: 530%;
+    background-size: 530% !important;
     background-position-x: 0%;
     height: 87.6vh;
     width: 100%;
@@ -147,7 +146,7 @@
 .navStyle { 
 
     border-bottom: 2px solid black !important;
-    background-color: transparent;
+    background-color: #c88ac5;
     width: 100%;
 }
 
@@ -177,7 +176,7 @@ background-color: black;
      
     .containerPanel2  {
   
-        margin-left: 3em;
+        margin-left: 0.1em;
 
     }
 

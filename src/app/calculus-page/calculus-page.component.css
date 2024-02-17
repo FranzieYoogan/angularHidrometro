@@ -4,10 +4,26 @@
     display: flex;
     justify-content: center;
     position: relative;
-    height: 100vh;
+    height: 87.7vh;
     justify-items: center;
-    background: linear-gradient(purple, pink);
+background: url('/assets/img/background/reservoir.png');
+background-size: 530% !important; 
     overflow: hidden;
+}
+
+.navStyle { 
+
+    border-bottom: 2px solid black !important;
+    background-color: #c88ac5;
+    width: 100%;
+}
+
+.logoStyle {
+
+    border-radius: 90px;
+    width: 45px;
+
+
 }
 
 .buttonText {
@@ -48,7 +64,7 @@
 
    
         left: 24em;  
-        bottom: 54%; 
+        bottom: 63%; 
    
     } 
 
@@ -67,7 +83,7 @@
 
 
             left: 19em;  
-            bottom: 39%; 
+            bottom: 45%; 
        
         } 
 
@@ -99,7 +115,7 @@ bottom: 0;
     justify-items: center;
 bottom: 0;
     visibility: hidden;
-    width: 30%%;
+    width: 30%;
 }
 
 .containerItem3 {
@@ -372,6 +388,12 @@ p {
       }
 
       @media only screen and (max-width: 400px) {
+
+        .containerCalculus {
+
+            height: 88.7vh;
+      
+        }
      
         .inputNew1 {
     
