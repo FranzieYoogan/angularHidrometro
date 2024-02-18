@@ -316,6 +316,9 @@ chatBotValueNo.innerHTML = 'Digite o valor anterior do hidrometro'
     const chatBotValueYes: any = document.getElementById('chatBotValueYes')
     const inputValue: any = document.getElementById('inputValue')
 
+    localStorage.setItem('currentOne','0')
+    localStorage.setItem('previousOne','0')
+
     inputValue.value = ''
 
     const dot1 = '.'
