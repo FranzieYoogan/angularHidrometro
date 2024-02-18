@@ -403,13 +403,19 @@ p {
 
     }
 
+    .containerCalculus {
+
+        height: 89.7vh;
+  
+    }
+
       }
 
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 425px) {
 
         .containerCalculus {
 
-            height: 88.7vh;
+            height: 89.7vh;
       
         }
      
