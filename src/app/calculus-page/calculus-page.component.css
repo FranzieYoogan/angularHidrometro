@@ -55,21 +55,23 @@ background-size: 530% !important;
     outline: 1px solid rgb(255, 174, 236);
     transition: 3s;
     opacity: 0;
-    visibility: hidden;
+    visibility: visible;
 }
 
 
 
 
-@media only screen and (max-width: 554px) {
+@media only screen and (max-width: 768px) {
      
      .buttonStyle {
 
    
-        left: 24em;  
-        bottom: 64.7%; 
+        left: 19em;  
+        bottom: 65.7%; 
    
     } 
+
+
 
     .containerCalculus {
 
