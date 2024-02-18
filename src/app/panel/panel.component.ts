@@ -57,7 +57,7 @@ export class PanelComponent implements OnInit {
      imgEvent() {
 
       const iconSendStyle:any = document.getElementById('iconSendStyle')
-      const inputConditionStyle: any = document.getElementById('inputConditionStyle')
+   
       iconSendStyle.style.width = "35px"
       iconSendStyle.style.transition = "1s"
       iconSendStyle.style.backgroundColor = "white"
