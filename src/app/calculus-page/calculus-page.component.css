@@ -114,29 +114,7 @@ background-size: 530% !important;
           }
 
 
-          @media only screen and (max-width: 375px) {
-     
-            .buttonStyle {
-   
-   
-               left: 19em;  
-               bottom: 45%; 
-          
-           } 
-   
-           .containerCalculus {
-   
-               overflow: hidden !important;
-   
-           }
-   
-           .buttonText {
-   
-               top: 56.5%;
-            
-             }
-       
-             }
+      
 
 
 
