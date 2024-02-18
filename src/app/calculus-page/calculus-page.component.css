@@ -58,6 +58,32 @@ background-size: 530% !important;
     visibility: visible;
 }
 
+@media only screen and (max-width: 768px) {
+     
+    .buttonStyle {
+
+  
+       left: 19.3em;  
+       bottom: 20.7%; 
+  
+   } 
+
+
+
+   .containerCalculus {
+
+       overflow: hidden !important;
+       height: 88.3vh;
+   }
+
+   .buttonText {
+
+     top: 49%;
+
+   }
+
+     }
+
 
 
 
@@ -89,13 +115,13 @@ background-size: 530% !important;
 
 
 
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 375px) {
      
          .buttonStyle {
 
 
             left: 19em;  
-            bottom: 20%; 
+            bottom: 24%; 
        
         } 
 
@@ -112,6 +138,54 @@ background-size: 530% !important;
           }
     
           }
+
+          @media only screen and (max-width: 400px) {
+     
+            .buttonStyle {
+   
+   
+               left: 19em;  
+               bottom: 20%; 
+          
+           } 
+   
+           .containerCalculus {
+   
+               overflow: hidden !important;
+   
+           }
+   
+           .buttonText {
+   
+               top: 56.5%;
+            
+             }
+       
+             }
+
+             @media only screen and (max-width: 475px) {
+     
+                .buttonStyle {
+       
+       
+                   left: 19em;  
+                   bottom: 20%; 
+              
+               } 
+       
+               .containerCalculus {
+       
+                   overflow: hidden !important;
+       
+               }
+       
+               .buttonText {
+       
+                   top: 56.5%;
+                
+                 }
+           
+                 }
 
 
       
