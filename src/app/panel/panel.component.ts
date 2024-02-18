@@ -59,6 +59,7 @@ export class PanelComponent implements OnInit {
       const iconSendStyle:any = document.getElementById('iconSendStyle')
       const inputConditionStyle: any = document.getElementById('inputConditionStyle')
       iconSendStyle.style.width = "35px"
+      iconSendStyle.style.transition = "1s"
       iconSendStyle.style.backgroundColor = "white"
       iconSendStyle.style.border = "2px solid transparent"
       iconSendStyle.style.boxShadow = "1px 1px 2px 2px black"
@@ -88,7 +89,7 @@ export class PanelComponent implements OnInit {
         containerAll.style.opacity = "1"
         containerAll.style.zIndex = "60"
         
-      }, 1500);
+      }, 300);
 
 
      }
