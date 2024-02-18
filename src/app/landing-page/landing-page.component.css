@@ -11,7 +11,7 @@
     background-position-y: 53%;
     height: 100vh;
     width: 100%;
-
+z-index: 600;
 }
 
 .containerLanding2 {
@@ -153,7 +153,7 @@
             background-size: 250%;
             background-repeat: repeat !important;
             width: 250% !important;
-            height: 156vh !important;
+            height: 136vh !important;
             overflow-y: hidden !important;
             z-index: 600;
             background-position-x: 40%;
