@@ -61,13 +61,13 @@ background-size: 530% !important;
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 554px) {
      
      .buttonStyle {
 
    
-        left: 19em;  
-        bottom: 65.7%; 
+        left: 19.3em;  
+        bottom: 26.7%; 
    
     } 
 
@@ -95,7 +95,7 @@ background-size: 530% !important;
 
 
             left: 19em;  
-            bottom: 45%; 
+            bottom: 20%; 
        
         } 
 
@@ -329,7 +329,7 @@ p {
  .inputNew1 {
 
     position: absolute;
-    top: 90%;
+    top: 88%;
     right: 60%;
     width: 30%;
     border-radius: 40px;
@@ -348,7 +348,7 @@ p {
  .inputNew2 {
 
     position: absolute;
-    top: 90%;
+    top: 88%;
     right: 10%;
     width: 30%;
     border-radius: 40px;
@@ -386,20 +386,20 @@ p {
      
     .inputNew1 {
 
-        top: 80%;
+        top: 85%;
 
     }
 
     .chatBotContainerNo {
 
-        left: 13%;
+        left: 0%;
 
     }
 
 
     .inputNew2 {
 
-        top: 80%;
+        top: 85%;
 
     }
 
@@ -415,7 +415,7 @@ p {
      
         .inputNew1 {
     
-            top: 80%;
+            top: 87%;
     
         }
 
@@ -429,7 +429,7 @@ p {
 
         .inputNew2 {
 
-            top: 80%;
+            top: 87%;
     
         }
 

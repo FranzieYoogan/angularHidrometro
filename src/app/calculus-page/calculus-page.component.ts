@@ -291,9 +291,9 @@ chatBotValue.innerHTML = 'Olá, por acaso você teria o valor em m3   ? '
 
     chatBotContainerNo.style.visibility = 'visible'
     chatBotContainerNo.style.opacity = '1'
-    chatBotContainerNo.style.transition = '3s'
+    chatBotContainerNo.style.transition = '1s'
     chatBotContainerNo.style.width = '100%'
-    chatBotContainerNo.style.bottom = '13em'
+    chatBotContainerNo.style.bottom = '5em'
 
 chatBotValueNo.innerHTML = 'Digite o valor anterior do hidrometro'
     timeValue2.innerHTML = currentDate2.toLocaleString()
