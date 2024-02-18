@@ -8,7 +8,7 @@
     justify-items: center;
 background: url('/assets/img/background/reservoir.png');
 background-size: 530% !important; 
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .navStyle { 
@@ -34,12 +34,13 @@ background-size: 530% !important;
     border: 2px solid transparent !important;
     outline: 2px solid transparent;
  visibility: hidden;
- position: fixed;
+ opacity: 0;
+ position: absolute;
     top: 55%;
     left: 68%;
     z-index: 65;
-
-
+        rotate: -186deg !important;
+    font-size: 60px;
 }
 
 .buttonStyle {
@@ -58,23 +59,32 @@ background-size: 530% !important;
 }
 
 
+
+
 @media only screen and (max-width: 554px) {
      
      .buttonStyle {
 
    
         left: 24em;  
-        bottom: 63%; 
+        bottom: 64.7%; 
    
     } 
 
+    .containerCalculus {
+
+        overflow: hidden !important;
+        height: 84.3vh;
+    }
+
     .buttonText {
 
-      top: 37%;
-
+      top: 49%;
+ 
     }
 
       }
+
 
 
       @media only screen and (max-width: 400px) {
@@ -87,10 +97,16 @@ background-size: 530% !important;
        
         } 
 
+        .containerCalculus {
+
+            overflow: hidden !important;
+
+        }
+
         .buttonText {
 
-            top: 55%;
-      
+            top: 56.5%;
+         
           }
     
           }
@@ -104,7 +120,7 @@ background-size: 530% !important;
 bottom: 0;
 
     width: 100%;
-       
+ 
 
 
 }

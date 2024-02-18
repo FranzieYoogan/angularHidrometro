@@ -4,11 +4,9 @@
     body {
 
 
-        background: url('/assets/img/background/reservoir2.png');
+        background: url('/assets/img/background/reservoir.png');
 
-        background-size: 230%;
-        background-position-y:30%;
-        background-position-x: 50%;
+ 
    
     }
 
@@ -18,11 +16,9 @@
     body {
 
 
-        background: url('/assets/img/background/reservoir2.png');
 
-        background-size: 250%;
-        background-position-x: 48%;
-    
+   
+       
 
     }
       }

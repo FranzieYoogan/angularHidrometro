@@ -7,7 +7,7 @@
     background-position-x: 0%;
     height: 87.6vh;
     width: 100%;
-
+    z-index: 600;
     display: flex;
     justify-content: center;
 }
@@ -68,18 +68,21 @@
     width: 225px;
     box-shadow: 1px 1px 1px 1px black;
 
+
 } 
 
 .containerCondition{
 
-  
- 
+
+
     display: flex !important;
     justify-content: center;
     z-index: 600;
     width: 100%;
+    overflow: hidden !important;
 }
 .containerCondition2{
+    overflow: hidden !important;
     top: 30%;
     position: fixed;
     z-index: 600;
@@ -233,7 +236,7 @@ border-radius: 3px;
 .navStyle { 
 
     border-bottom: 2px solid black !important;
-    background-color: #c88ac5;
+    background-color: #c88ac5 !important;
     width: 100%;
 }
 

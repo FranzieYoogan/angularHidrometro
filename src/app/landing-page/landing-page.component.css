@@ -1,12 +1,27 @@
 
 
 
-.containerLanding{
+.containerAll {
+
+    background: url('/assets/img/background/reservoir.png');
+
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position-x: 43%;
+    background-position-y: 53%;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.containerLanding2 {
+
 
     display: flex;
     justify-content: center;
-    position: relative;
+
 }
+
 
 .containerText{
 
@@ -45,7 +60,7 @@
     outline: none;
     border: 1px  solid transparent;
     box-shadow: 2px 2px 1px 2px black;
-    z-index: 60;
+    z-index: 600;
 
 }
 
@@ -75,8 +90,8 @@
     left: 50%;
     border: 2px solid transparent !important;
     outline: 2px solid transparent;
-    z-index: -60;
-
+    z-index: 60;
+    cursor: pointer;
 }
 
 
@@ -100,6 +115,21 @@
     
     }
 
+    .containerLanding{
+
+
+
+        background: url('/assets/img/background/reservoir.png');
+        background-size: 250%;
+        background-repeat: repeat !important;
+        width: 250% !important;
+        height: 135vh !important;
+        z-index: 600;
+        overflow: hidden;
+        background-position-x: 40%;
+        background-position-y: 60%;
+    }
+
 
     
       }
@@ -115,7 +145,20 @@
            top: 13em;
         
         }
+        .containerLanding{
 
+
+
+            background: url('/assets/img/background/reservoir.png');
+            background-size: 250%;
+            background-repeat: repeat !important;
+            width: 250% !important;
+            height: 136vh !important;
+            overflow-y: hidden !important;
+            z-index: 600;
+            background-position-x: 40%;
+            background-position-y: 60%;
+        }
    
      
         .titleStyle{

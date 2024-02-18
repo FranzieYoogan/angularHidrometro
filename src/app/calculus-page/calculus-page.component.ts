@@ -93,8 +93,11 @@ export class CalculusPageComponent implements OnInit {
       }, 800);
 
       setTimeout(() => {
-        buttonText.style.transition ='1s'
-        buttonText.style.left ='58%'
+        buttonText.style.transition ='1.5s'
+        buttonText.style.opacity ='1'
+        buttonText.style.left ='550%'
+        
+   
         buttonText.style.visibility ='visible'
         localStorage.setItem('previousOne',getMonth1.value)
         localStorage.setItem('currentOne',getMonth2.value)
@@ -102,7 +105,7 @@ export class CalculusPageComponent implements OnInit {
       
 
 
-      }, 1500);
+      }, 1000);
 
       setTimeout(() => {
   
@@ -111,7 +114,7 @@ export class CalculusPageComponent implements OnInit {
         window.location.href = '/panel'
 
 
-      }, 2500);
+      }, 2000);
 
 
   
