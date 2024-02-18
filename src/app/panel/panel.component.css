@@ -286,7 +286,7 @@ background-color: black;
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 771px) {
      
     .containerPanel2  {
   
@@ -297,7 +297,7 @@ background-color: black;
     .containerAll {
 
         width: 130%;
-        height: 119vh;
+        height: 125vh;
     }
 
     .navStyle { 
