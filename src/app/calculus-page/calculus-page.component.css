@@ -58,32 +58,6 @@ background-size: 530% !important;
     visibility: visible;
 }
 
-@media only screen and (max-width: 768px) {
-     
-    .buttonStyle {
-
-  
-       left: 19.3em;  
-       bottom: 20.7%; 
-  
-   } 
-
-
-
-   .containerCalculus {
-
-       overflow: hidden !important;
-       height: 88.3vh;
-   }
-
-   .buttonText {
-
-     top: 49%;
-
-   }
-
-     }
-
 
 
 
@@ -115,13 +89,13 @@ background-size: 530% !important;
 
 
 
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 400px) {
      
          .buttonStyle {
 
 
             left: 19em;  
-            bottom: 24%; 
+            bottom: 17.8% !important; 
        
         } 
 
@@ -139,80 +113,56 @@ background-size: 530% !important;
     
           }
 
-          @media only screen and (max-width: 400px) {
+          
+      @media only screen and (max-width: 768px) {
+     
+        .buttonStyle {
+
+
+           left: 19em;  
+           bottom: 17.8% !important; 
+      
+       } 
+
+       .containerCalculus {
+
+           overflow: hidden !important;
+            
+       }
+
+       .buttonText {
+
+           top: 56.5%;
+        
+         }
+   
+         }
+
+
+         @media only screen and (max-width: 320px) {
      
             .buttonStyle {
-   
-   
-               left: 19em;  
-               bottom: 20%; 
+    
+    
+               left: 16em;  
+               bottom: 17.5%; 
           
            } 
-   
+    
            .containerCalculus {
-   
+    
                overflow: hidden !important;
    
            }
-   
+    
            .buttonText {
-   
+    
                top: 56.5%;
             
              }
        
              }
-
-             @media only screen and (max-width: 475px) {
-     
-                .buttonStyle {
-       
-       
-                   left: 19em;  
-                   bottom: 20%; 
-              
-               } 
-       
-               .containerCalculus {
-       
-                   overflow: hidden !important;
-       
-               }
-       
-               .buttonText {
-       
-                   top: 56.5%;
-                
-                 }
-           
-                 }
-
-                 @media only screen and (max-width: 771px) {
-     
-                    .buttonStyle {
-           
-           
-                       left: 19em;  
-                       bottom: 26%; 
-                  
-                   } 
-           
-                   .containerCalculus {
-           
-                       overflow: hidden !important;
-           
-                   }
-           
-                   .buttonText {
-           
-                       top: 56.5%;
-                    
-                     }
-               
-                     }
-
-
-      
+    
 
 
 
