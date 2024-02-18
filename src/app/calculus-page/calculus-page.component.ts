@@ -370,7 +370,7 @@ setTimeout(() => {
     const chatBotContainerYesNoFailed :any = document.getElementById('chatBotContainerYesNoFailed ')
     const timeValue4: any = document.getElementById('timeValueYesNoFailed')
     const chatBotValueYesNoFailed: any = document.getElementById('chatBotValueYesNoFailed')
-    const chatBotContainer:any = document.getElementById('chatBotContainer')
+
     const dot2 = '.'
 
 chatBotValueYesNoFailed.innerHTML = 'Desculpe, devido ao meu script limitado não pude compreender suas palavras. Vamos tentar de novo'
