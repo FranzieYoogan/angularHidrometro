@@ -105,6 +105,45 @@ export class PanelComponent implements OnInit {
     const currentOne:any = localStorage.getItem('currentOne')
 
     const untilNow = currentOne - previousOne
+
+    if(!inputValueDias.value) {
+
+      inputValueDias.style.border = '2px solid red'
+      resultInput.innerHTML = 'ERROR!!'
+
+    }
+
+    if(inputValueDias.value) {
+
+      inputValueDias.style.border = '2px solid green'
+
+    }
+
+    if(!inputValueMoradores.value) {
+
+      inputValueMoradores.style.border = '2px solid red'
+
+    }
+
+    if(inputValueMoradores.value) {
+
+      inputValueMoradores.style.border = '2px solid green'
+
+    }
+
+
+    if(!inputValueAliquota.value) {
+
+      inputValueAliquota.style.border = '2px solid red'
+
+    }
+
+    if(inputValueAliquota.value) {
+
+      inputValueAliquota.style.border = '2px solid green'
+
+    }
+    
     
 
     let result =  ((untilNow*1000/inputValueDias.value )/inputValueMoradores.value) 
@@ -119,15 +158,15 @@ export class PanelComponent implements OnInit {
     
     const result2 = result + (inputValueAliquota.value * 100)
 
-    if(result) {
+    if(result2<=999999) {
       inputValueDias.value = ""
       inputValueMoradores.value = ""
       inputValueAliquota.value = ""
       return   resultInput.innerHTML =  result2.toFixed(2)
  
-    }
+    } 
   
-    return   resultInput.innerHTML =  result2.toString()
+    return   resultInput.innerHTML =  "0"
 
   }
 
