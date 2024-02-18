@@ -106,19 +106,27 @@ export class PanelComponent implements OnInit {
     const untilNow = currentOne - previousOne
     
 
-    let result =  ((untilNow*1000/inputValueDias.value )/inputValueMoradores.value) + inputValueAliquota.value*100
+    let result =  ((untilNow*1000/inputValueDias.value )/inputValueMoradores.value) 
     console.log(untilNow)
-   
+
+    if(result < 0) {
+
+      result *= -1
+
+    }
+
+    
+    const result2 = result + (inputValueAliquota.value * 100)
 
     if(result) {
       inputValueDias.value = ""
       inputValueMoradores.value = ""
       inputValueAliquota.value = ""
-      return   resultInput.innerHTML =  result.toFixed(2).toString()
+      return   resultInput.innerHTML =  result2.toFixed(2)
  
     }
   
-    return   resultInput.innerHTML =  result.toString()
+    return   resultInput.innerHTML =  result2.toString()
 
   }
 
@@ -135,8 +143,9 @@ export class PanelComponent implements OnInit {
      if(localStorage.getItem("currentOne")) {
       let untilNow:any = currentOne - previousOne
 
+     
 
-    return  untilNow
+    return  untilNow.toString().replace('-','')
 
      } else {
       let untilNow:any = 0
@@ -157,9 +166,11 @@ export class PanelComponent implements OnInit {
 
     const untilNow = currentOne - previousOne
 
-    const litrerValue:any = untilNow * 1000
+    let litrerValue:any = untilNow * 1000
 
-    return litrerValue
+   
+
+    return litrerValue.toString().replace('-','')
 
   }
 
