@@ -106,39 +106,39 @@ export class PanelComponent implements OnInit {
 
     const untilNow = currentOne - previousOne
 
-    if(!inputValueDias.value) {
+    if(inputValueDias.value <= 0 || !inputValueDias.value) {
 
       inputValueDias.style.border = '2px solid red'
       resultInput.innerHTML = 'ERROR!!'
 
     }
 
-    if(inputValueDias.value) {
+    if(inputValueDias.value > 0) {
 
       inputValueDias.style.border = '2px solid green'
 
     }
 
-    if(!inputValueMoradores.value) {
+    if(inputValueMoradores.value <= 0 || !inputValueMoradores.value) {
 
       inputValueMoradores.style.border = '2px solid red'
 
     }
 
-    if(inputValueMoradores.value) {
+    if(inputValueMoradores.value > 0) {
 
       inputValueMoradores.style.border = '2px solid green'
 
     }
 
 
-    if(!inputValueAliquota.value) {
+    if(inputValueAliquota.value <= 0 || !inputValueAliquota.value) {
 
       inputValueAliquota.style.border = '2px solid red'
 
     }
 
-    if(inputValueAliquota.value) {
+    if(inputValueAliquota.value > 0) {
 
       inputValueAliquota.style.border = '2px solid green'
 
@@ -150,7 +150,7 @@ export class PanelComponent implements OnInit {
     console.log(untilNow)
 
     if(result < 0) {
-
+   
       result *= -1
 
     }
@@ -158,14 +158,23 @@ export class PanelComponent implements OnInit {
     
     const result2 = result + (inputValueAliquota.value * 100)
 
+
+ 
+
     if(result2<=999999) {
+      
       inputValueDias.value = ""
       inputValueMoradores.value = ""
       inputValueAliquota.value = ""
       return   resultInput.innerHTML =  result2.toFixed(2)
  
-    } 
-  
+    }  else {
+
+
+    }
+     inputValueAliquota.value = ""
+      inputValueMoradores.value = ""
+      inputValueDias.value = ""
     return   resultInput.innerHTML =  "0"
 
   }
