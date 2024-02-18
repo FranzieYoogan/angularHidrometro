@@ -109,7 +109,7 @@ export class PanelComponent implements OnInit {
     if(inputValueDias.value <= 0 || !inputValueDias.value) {
 
       inputValueDias.style.border = '2px solid red'
-      resultInput.innerHTML = 'ERROR!!'
+   
 
     }
 
@@ -155,11 +155,17 @@ export class PanelComponent implements OnInit {
 
     }
 
+    if(inputValueAliquota.value == 0) {
+   
+      result = 0
+
+    }
+
     
     const result2 = result + (inputValueAliquota.value * 100)
 
 
- 
+
 
     if(result2<=999999) {
       
@@ -170,12 +176,12 @@ export class PanelComponent implements OnInit {
  
     }  else {
 
-
-    }
-     inputValueAliquota.value = ""
+      inputValueAliquota.value = ""
       inputValueMoradores.value = ""
       inputValueDias.value = ""
     return   resultInput.innerHTML =  "0"
+    }
+
 
   }
 
