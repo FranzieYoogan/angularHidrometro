@@ -17,7 +17,7 @@ export class PanelComponent implements OnInit {
     
 
 
-    if(!localStorage.getItem("previousOne") && !localStorage.getItem("currentOne")) {
+    if(!localStorage.getItem("currentOne")) {
       const containerAll:any = document.getElementById('containerAll')
 
 
@@ -29,7 +29,7 @@ export class PanelComponent implements OnInit {
 
   } else {
     const containerAll:any = document.getElementById('containerAll')
-
+    localStorage.setItem('previousOne','0')
     containerAll.style.opacity = "1"
     containerAll.style.zIndex = "60"
   }
@@ -37,7 +37,7 @@ export class PanelComponent implements OnInit {
 
 }
 
-    untilNow: any
+   
 
   inputConditionEvent() {
 
@@ -68,7 +68,7 @@ export class PanelComponent implements OnInit {
       setTimeout(() => {
         const inputConditionStyle: any = document.getElementById('inputConditionStyle')
   
-     
+        localStorage.setItem('previousOne', '0')
         localStorage.setItem('currentOne', inputConditionStyle.value)
         inputConditionStyle.value = ""
 

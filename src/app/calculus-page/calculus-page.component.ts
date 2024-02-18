@@ -93,6 +93,8 @@ export class CalculusPageComponent implements OnInit {
       }, 800);
 
       setTimeout(() => {
+        const getMonth1:any = document.getElementById('getMonth1')
+        const getMonth2:any = document.getElementById('getMonth2')
         buttonText.style.transition ='1.5s'
         buttonText.style.opacity ='1'
         buttonText.style.left ='550%'
