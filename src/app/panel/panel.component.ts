@@ -17,7 +17,7 @@ export class PanelComponent implements OnInit {
     
 
 
-    if(!localStorage.getItem('currentOne')) {
+    if(localStorage.getItem('currentOne') == '0') {
       const containerAll:any = document.getElementById('containerAll')
 
 
